@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include alfassam *.css
+recursive-include alfassam *.csv
+recursive-include alfassam *.html
+recursive-include alfassam *.ico
+recursive-include alfassam *.js
+recursive-include alfassam *.json
+recursive-include alfassam *.md
+recursive-include alfassam *.png
+recursive-include alfassam *.py
+recursive-include alfassam *.svg
+recursive-include alfassam *.txt
+recursive-exclude alfassam *.pyc
