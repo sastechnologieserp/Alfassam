@@ -110,6 +110,17 @@ app_license = "MIT"
 #	}
 # }
 
+fixtures = [
+    {
+        "doctype": "Translation",
+		"filters": {
+			"source_text": ("in", (
+				"Cost Center"
+            ))
+        }
+    }
+]
+
 # Scheduled Tasks
 # ---------------
 
