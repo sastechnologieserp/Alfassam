@@ -6,6 +6,7 @@ import json
 import frappe
 from frappe import _, msgprint, scrub
 from frappe.utils import cint, cstr, flt, fmt_money, formatdate, get_link_to_form, nowdate
+from frappe.model.naming import make_autoname
 
 import erpnext
 from erpnext.accounts.deferred_revenue import get_deferred_booking_accounts
@@ -34,6 +35,14 @@ class ReceiptVoucher(AccountsController):
 
 	def get_feed(self):
 		return self.voucher_type
+	
+	def autoname(self):
+		if self.cost_center == "HOE - AT&IC":
+			self.name= make_autoname(f"H-{self.naming_series}")
+		elif self.cost_center == "Real Estate - AT&IC":
+			self.name= make_autoname(f"R-{self.naming_series}")
+		elif self.cost_center == "Investment - AT&IC":
+			self.name= make_autoname(f"I-{self.naming_series}")
 
 	def validate(self):
 		if self.voucher_type == "Opening Entry":

@@ -102,15 +102,23 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+
+doc_events = {
+	"Journal Entry": {
+		"autoname": "alfassam.hooks.journal_entry.autoname",
+        "validate": "alfassam.hooks.journal_entry.validate",
+	}
+}
 
 fixtures = [
+    {
+        "doctype": "Custom Field",
+		"filters": {
+			"name": ("in", (
+				"Journal Entry-cost_center"
+            ))
+        }
+    },
     {
         "doctype": "Translation",
 		"filters": {
