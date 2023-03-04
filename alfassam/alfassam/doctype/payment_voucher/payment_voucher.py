@@ -41,6 +41,15 @@ class PaymentVoucher(AccountsController):
 
 		if not self.is_opening:
 			self.is_opening = "No"
+		
+		if self.is_new():
+			if self.cost_center == "HOE - AT&IC":
+				self.naming_series = 'H-' + self.naming_series
+			elif self.cost_center == "Real Estate - AT&IC":
+				self.naming_series = 'R-' + self.naming_series
+			elif self.cost_center == "Investment - AT&IC":
+				self.naming_series = 'I-' + self.naming_series
+			
 
 		self.clearance_date = None
 
