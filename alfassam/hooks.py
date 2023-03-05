@@ -106,7 +106,7 @@ app_license = "MIT"
 doc_events = {
 	"Journal Entry": {
 		"autoname": "alfassam.hooks.journal_entry.autoname",
-        "validate": "alfassam.hooks.journal_entry.validate",
+        # "validate": "alfassam.hooks.journal_entry.validate",
 	}
 }
 

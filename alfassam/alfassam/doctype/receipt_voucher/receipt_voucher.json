@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2023-02-26 18:59:11.880699",
@@ -552,7 +553,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-26 19:08:31.157930",
+ "modified": "2023-03-04 19:51:03.486196",
  "modified_by": "Administrator",
  "module": "Alfassam",
  "name": "Receipt Voucher",

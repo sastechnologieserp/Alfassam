@@ -62,8 +62,9 @@ class PaymentVoucher(AccountsController):
 		self.set_cost_center()
 
 		# Do not validate while importing via data import
-		if not frappe.flags.in_import:
-			self.validate_total_debit_and_credit()
+		# if not frappe.flags.in_import:
+		# 	self.validate_total_debit_and_credit()
+		self.validate_total_debit_and_credit()
 
 		if not frappe.flags.is_reverse_depr_entry:
 			self.validate_against_jv()
