@@ -74,24 +74,24 @@ def execute(filters=None):
 	)
 	data.append(row2)
 	data.append(row3)
-	landed_cost_list = get_landed_cost(cs_data)
+	landed_cost_list, total_grand_total, total_base_grand_total  = get_landed_cost(cs_data)
 	if landed_cost_list:
 		for landed_cost in landed_cost_list:
 			row4 = frappe._dict(landed_cost)
 			data.append(row4)
-	row5 = frappe._dict({
+	grand_total_row = frappe._dict({
 		'name': '',
 		'container_reference': '',
 		'supplier' : '',
 		'posting_date' : "",
-		'currency' : "Total",
-		'grand_total' : 1000,
-		'base_grand_total' : 1000
-		
+		'currency' : "Grand Total",
+		'grand_total' : "%.3f" % round(account_currency_grand_total + total_grand_total, 3),
+		'base_grand_total' : "%.3f" % round(company_currency_grand_total + total_base_grand_total, 3),	
 	},
 	)
 	
 	data.append(total_row)
+	data.append(grand_total_row)
 
 	
 	
@@ -156,7 +156,6 @@ def get_columns():
 def get_cs_data(filters):
 	filters["docstatus"] = 1
 	conditions = get_conditions(filters)
-	print(conditions)
 	data = frappe.get_all(
 		doctype='Purchase Invoice',
 		fields = ['name','container_reference','supplier','posting_date','grand_total','base_grand_total','currency'],
@@ -175,6 +174,8 @@ def get_conditions(filters):
 
 def get_landed_cost(invoice_list):
 	a = []
+	total_grand_total = 0
+	total_base_grand_total = 0
 	for invoice in invoice_list:
 		landed_cost_voucher = frappe.db.get_value("Landed Cost Purchase Receipt", {'receipt_document': invoice.name, 'docstatus': 1}, 'parent')
 		landed_cost_accounts = frappe.db.get_list("Landed Cost Taxes and Charges", {'parent': landed_cost_voucher, 'docstatus': 1}, ['expense_account','amount', 'description'])
@@ -182,16 +183,19 @@ def get_landed_cost(invoice_list):
 			for item in landed_cost_accounts:
 				flag = False
 				if len(a) > 0:
-					print(a)
-					for b in a:
-						grand_total = 0
+					for b in a:	
 						if b["posting_date"] == item.expense_account:
+							total_grand_total += item.amount
+							total_base_grand_total += item.amount
+							grand_total = float(b["grand_total"])
 							grand_total += item.amount
 							b["grand_total"] = "%.3f" % round(grand_total, 3)
 							#b["grand_total"] += item.amount
 							b["base_grand_total"] = b["grand_total"]
 							flag = True
 				if flag == False:
+					total_grand_total += item.amount
+					total_base_grand_total += item.amount
 					a.append(
 						{
 							'name': '',
@@ -203,4 +207,15 @@ def get_landed_cost(invoice_list):
 							'base_grand_total' : item.amount
 						}
 					)
-	return a
+	a.append(
+		{
+			'name': '',
+			'container_reference': '',
+			'supplier' : "",
+			'posting_date' : '',
+			'currency' : " ",
+			'grand_total' : "%.3f" % round(total_grand_total, 3),
+			'base_grand_total' : "%.3f" % round(total_base_grand_total, 3),
+		}
+	)
+	return a, total_grand_total, total_base_grand_total
