@@ -25,6 +25,7 @@ def execute(filters=None):
 		row = frappe._dict({
 			'name': d.name,
 			'container_reference': d.container_reference,
+			'exhange_rate': d.conversion_rate,
 			'supplier' : d.supplier,
 			'posting_date' : d.posting_date,
 			'currency' : d.currency,
@@ -67,8 +68,8 @@ def execute(filters=None):
 		'supplier' : " ",
 		'posting_date' : "Account",
 		'currency' : " ",
-		'grand_total' : "Amount(FC)",
-		'base_grand_total' : "Amount(FC)"
+		'grand_total' : "Amount",
+		'base_grand_total' : "Amount(CC)"
 		
 	},
 	)
@@ -116,6 +117,12 @@ def get_columns():
 				
 			},
 			{
+				"label": _("Exchange Rate"),
+				"fieldname": "exchange_rate",
+				"fieldtype": "currency",
+				"width": 150,
+			},
+			{
 				"label": _("Date"),
 				"fieldname": "posting_date",
 				"fieldtype": "date",
@@ -130,7 +137,7 @@ def get_columns():
 				'width': '120'
 			},
 			{
-			"label": _("Currency"),
+				"label": _("Currency"),
 				"fieldname": "currency",
 				"fieldtype": "date",
 				"options": "Purchase Invoice",
@@ -158,7 +165,7 @@ def get_cs_data(filters):
 	conditions = get_conditions(filters)
 	data = frappe.get_all(
 		doctype='Purchase Invoice',
-		fields = ['name','container_reference','supplier','posting_date','grand_total','base_grand_total','currency'],
+		fields = ['name','container_reference','supplier','posting_date','conversion_rate','grand_total','base_grand_total','currency'],
 		filters=conditions,
 		# order_by='name desc'
 	)
@@ -178,7 +185,7 @@ def get_landed_cost(invoice_list):
 	total_base_grand_total = 0
 	for invoice in invoice_list:
 		landed_cost_voucher = frappe.db.get_value("Landed Cost Purchase Receipt", {'receipt_document': invoice.name, 'docstatus': 1}, 'parent')
-		landed_cost_accounts = frappe.db.get_list("Landed Cost Taxes and Charges", {'parent': landed_cost_voucher, 'docstatus': 1}, ['expense_account','amount', 'description'])
+		landed_cost_accounts = frappe.db.sql("""select expense_account, amount, description from `tabLanded Cost Taxes and Charges` where parent = %s and docstatus = 1""", landed_cost_voucher, as_dict = 1)
 		if landed_cost_accounts:
 			for item in landed_cost_accounts:
 				flag = False
