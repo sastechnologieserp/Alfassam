@@ -107,7 +107,10 @@ doc_events = {
 	"Journal Entry": {
 		"autoname": "alfassam.alfassam.hooks.journal_entry.autoname",
         "validate": "alfassam.alfassam.hooks.journal_entry.validate",
-	}
+	},
+    "Item Price":{
+        "on_update": "alfassam.alfassam.hooks.item_price.on_update"
+    }
 }
 
 fixtures = [
