@@ -110,6 +110,9 @@ doc_events = {
 	},
     "Item Price":{
         "on_update": "alfassam.alfassam.hooks.item_price.on_update"
+    },
+    "Item":{
+        "validate": "alfassam.alfassam.hooks.item.validate"
     }
 }
 

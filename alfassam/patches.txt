@@ -1,1 +1,2 @@
 alfassam.patches.v1.update_standard_rate_in_item
+alfassam.patches.v1.update_supplier_in_item
