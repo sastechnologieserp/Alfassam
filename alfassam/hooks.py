@@ -121,7 +121,8 @@ fixtures = [
         "doctype": "Custom Field",
 		"filters": {
 			"name": ("in", (
-				"Journal Entry-cost_center"
+				"Journal Entry-cost_center",
+                "Item-supplier"
             ))
         }
     },
