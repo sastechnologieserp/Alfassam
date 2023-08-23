@@ -20,6 +20,7 @@ def execute(filters: Filters = None) -> Tuple:
 
 	item_details = FIFOSlots(filters).generate()
 	data = format_report_data(filters, item_details, to_date)
+	print(data)
 
 	# chart_data = get_chart_data(data, filters)
 
@@ -443,7 +444,7 @@ class FIFOSlots:
 		if self.filters.get("warehouse"):
 			sle_query = self.__get_warehouse_conditions(sle, sle_query)
 # I have add "* -1" in sle.posting_date * -1, sle.posting_time * -1, sle.creation * -1
-		sle_query = sle_query.orderby(sle.posting_date * -1, sle.posting_time * -1, sle.creation * -1, sle.actual_qty)
+		sle_query = sle_query.orderby(sle.posting_date, sle.posting_time, sle.creation, sle.actual_qty)
 
 		return sle_query.run(as_dict=True)
 
