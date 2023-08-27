@@ -10,17 +10,30 @@ from frappe import _
 from frappe.utils import cint, date_diff, flt
 
 from erpnext.stock.doctype.serial_no.serial_no import get_serial_nos
+from erpnext.stock.get_item_details import get_valuation_rate
 
 Filters = frappe._dict
 
 
 def execute(filters: Filters = None) -> Tuple:
 	to_date = filters["to_date"]
+	show_warehouse_wise_stock = filters.get("show_warehouse_wise_stock") or None
 	columns = get_columns(filters)
 
 	item_details = FIFOSlots(filters).generate()
 	data = format_report_data(filters, item_details, to_date)
-	print(data)
+	if show_warehouse_wise_stock:
+		for item in data:
+			sql_query = """
+			SELECT valuation_rate
+			FROM `tabStock Ledger Entry`
+			WHERE item_code = %s AND warehouse = %s
+			ORDER BY posting_date DESC
+			LIMIT 1
+			"""
+			valuation_rate = frappe.db.sql(sql_query, (item[0], item[5]))
+			item_valuation_rate = valuation_rate[0][0] if valuation_rate else None
+			item[4] = item_valuation_rate
 
 	# chart_data = get_chart_data(data, filters)
 
