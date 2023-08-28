@@ -1,0 +1,378 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"5pTkDqzKQu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">AlFassam Shortcut</span>\",\"col\":12}},{\"id\":\"1ZOopAdP03\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock\",\"col\":4}},{\"id\":\"zXxmFRNsf7\",\"type\":\"card\",\"data\":{\"card_name\":\"Entry Screen\",\"col\":4}},{\"id\":\"Q03RYCbtL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Purchase\",\"col\":4}},{\"id\":\"dH0RGjWRUf\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales\",\"col\":4}},{\"id\":\"SP7hpUrHwy\",\"type\":\"card\",\"data\":{\"card_name\":\"Party\",\"col\":4}},{\"id\":\"x48erVOMDr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"6utnDIjOCL\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">STOCK<b></b></span>\",\"col\":12}},{\"id\":\"H_BOHSyFtr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"mDSH6V9dG5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Chart of Accounts\",\"col\":3}},{\"id\":\"M0TwNbteTs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Enquiry\",\"col\":3}},{\"id\":\"Z-qbGhklw4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Enquiry Summary\",\"col\":3}},{\"id\":\"Xl5ZafJbxS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Balance\",\"col\":3}},{\"id\":\"hSdcOtZS5-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ageing\",\"col\":3}},{\"id\":\"d-uCAkIn3h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fpWEK3gnhE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">SALES REPORT<b></b></span>\",\"col\":12}},{\"id\":\"Z1Vc2zlPpr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Qy_3uOAwLj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Analytics\",\"col\":3}},{\"id\":\"ZVjcm2mNFF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Summary\",\"col\":3}},{\"id\":\"Img-eYlMpZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Profit Summary\",\"col\":3}},{\"id\":\"4TeJlftJJl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SALES.REGISTER.SAJEEV\",\"col\":3}},{\"id\":\"oT0D9r3qG8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Payment Summary\",\"col\":3}},{\"id\":\"3whTEpszMm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Person-wise Transaction Summary\",\"col\":3}},{\"id\":\"dyMJVK9M_i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Sales History\",\"col\":3}},{\"id\":\"_FLLZ_Tm1T\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Sales Register\",\"col\":3}},{\"id\":\"KQOFU0bdyf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"EJCgbNsrYe\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">GL REPORT<b></b></span>\",\"col\":12}},{\"id\":\"Lu7yIUXDCx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"v4cDghgEe3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"General Ledger\",\"col\":3}},{\"id\":\"DtsbHbXjSy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trial Balance\",\"col\":3}},{\"id\":\"Ov6bCojr07\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backups\",\"col\":3}},{\"id\":\"ydIomjOFkY\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rhR6d5jifV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>PURCHASE REPORT</b></span>\",\"col\":12}},{\"id\":\"nPaSodMBpO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PhNMQV6T6e\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Register\",\"col\":3}},{\"id\":\"ZvfPKV_sIm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Purchase\",\"col\":3}},{\"id\":\"2ZfVPxc0t3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Analytics\",\"col\":3}},{\"id\":\"JdmttPEMjK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order Analysis\",\"col\":3}}]",
+ "creation": "2023-05-17 09:27:15.013007",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "menu",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "AlFassam",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Container Reference",
+   "link_count": 0,
+   "link_to": "Container Reference",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quotation",
+   "link_count": 0,
+   "link_to": "Quotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivery Note",
+   "link_count": 0,
+   "link_to": "Delivery Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Price",
+   "link_count": 0,
+   "link_to": "Item Price",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Group",
+   "link_count": 0,
+   "link_to": "Item Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Entry",
+   "link_count": 0,
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Reconciliation",
+   "link_count": 0,
+   "link_to": "Stock Reconciliation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Entry Screen",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Journal Voucher",
+   "link_count": 0,
+   "link_to": "Journal Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Voucher",
+   "link_count": 0,
+   "link_to": "Payment Voucher",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Receipt Voucher",
+   "link_count": 0,
+   "link_to": "Receipt Voucher",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Party",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Order",
+   "link_count": 0,
+   "link_to": "Purchase Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Landed Cost Voucher",
+   "link_count": 0,
+   "link_to": "Landed Cost Voucher",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-08-20 11:56:37.311002",
+ "modified_by": "Administrator",
+ "module": "Alfassam",
+ "name": "AlFassam",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Chart of Accounts",
+   "link_to": "Account",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Enquiry",
+   "link_to": "Stock Enquiry",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Backups",
+   "link_to": "backups",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Balance",
+   "link_to": "Stock Balance ALFASSAM",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Enquiry Summary",
+   "link_to": "Stock Enquiry Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SALES.REGISTER.SAJEEV",
+   "link_to": "SALES.REGISTER.SAJEEV",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Analytics",
+   "link_to": "Sales Analytics",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Payment Summary",
+   "link_to": "Sales Payment Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "General Ledger",
+   "link_to": "General Ledger ALFASSAM",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Summary",
+   "link_to": "Sales Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Ageing",
+   "link_to": "Stock Ageing Alfassam",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Profit Summary",
+   "link_to": "Sales Profit Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Person-wise Transaction Summary",
+   "link_to": "Sales Person-wise Transaction Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item-wise Sales History",
+   "link_to": "Item-wise Sales History",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Trial Balance",
+   "link_to": "Trial Balance",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item-wise Sales Register",
+   "link_to": "Item-wise Sales Register",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Purchase Register",
+   "link_to": "Purchase Register",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item-wise Purchase",
+   "link_to": "Item-wise Purchase Register",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Purchase Analytics",
+   "link_to": "Purchase Analytics",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Purchase Order Analysis",
+   "link_to": "Purchase Order Analysis",
+   "type": "Report"
+  }
+ ],
+ "title": "AlFassam"
+}

@@ -25,7 +25,7 @@ def execute(filters=None):
 		row = frappe._dict({
 			'name': d.name,
 			'container_reference': d.container_reference,
-			'exhange_rate': d.conversion_rate,
+			'conversion_rate': d.conversion_rate,
 			'supplier' : d.supplier,
 			'posting_date' : d.posting_date,
 			'currency' : d.currency,
@@ -118,8 +118,8 @@ def get_columns():
 			},
 			{
 				"label": _("Exchange Rate"),
-				"fieldname": "exchange_rate",
-				"fieldtype": "currency",
+				"fieldname": "conversion_rate",
+				"fieldtype": "float",
 				"width": 150,
 			},
 			{
