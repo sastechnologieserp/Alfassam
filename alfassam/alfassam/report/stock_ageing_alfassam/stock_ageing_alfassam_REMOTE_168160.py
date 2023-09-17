@@ -456,7 +456,6 @@ class FIFOSlots:
 
 		if self.filters.get("warehouse"):
 			sle_query = self.__get_warehouse_conditions(sle, sle_query)
-
 # I have add "* -1" in sle.posting_date * -1, sle.posting_time * -1, sle.creation * -1
 		sle_query = sle_query.orderby(sle.posting_date, sle.posting_time, sle.creation, sle.actual_qty)
 

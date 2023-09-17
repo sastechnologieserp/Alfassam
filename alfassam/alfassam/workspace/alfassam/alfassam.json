@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"5pTkDqzKQu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">AlFassam Shortcut</span>\",\"col\":12}},{\"id\":\"1ZOopAdP03\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock\",\"col\":4}},{\"id\":\"zXxmFRNsf7\",\"type\":\"card\",\"data\":{\"card_name\":\"Entry Screen\",\"col\":4}},{\"id\":\"Q03RYCbtL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Purchase\",\"col\":4}},{\"id\":\"dH0RGjWRUf\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales\",\"col\":4}},{\"id\":\"SP7hpUrHwy\",\"type\":\"card\",\"data\":{\"card_name\":\"Party\",\"col\":4}},{\"id\":\"x48erVOMDr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"6utnDIjOCL\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">STOCK<b></b></span>\",\"col\":12}},{\"id\":\"H_BOHSyFtr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"mDSH6V9dG5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Chart of Accounts\",\"col\":3}},{\"id\":\"M0TwNbteTs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Enquiry\",\"col\":3}},{\"id\":\"Z-qbGhklw4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Enquiry Summary\",\"col\":3}},{\"id\":\"Xl5ZafJbxS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Balance\",\"col\":3}},{\"id\":\"hSdcOtZS5-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ageing\",\"col\":3}},{\"id\":\"d-uCAkIn3h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fpWEK3gnhE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">SALES REPORT<b></b></span>\",\"col\":12}},{\"id\":\"Z1Vc2zlPpr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Qy_3uOAwLj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Analytics\",\"col\":3}},{\"id\":\"ZVjcm2mNFF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Summary\",\"col\":3}},{\"id\":\"Img-eYlMpZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Profit Summary\",\"col\":3}},{\"id\":\"4TeJlftJJl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SALES.REGISTER.SAJEEV\",\"col\":3}},{\"id\":\"oT0D9r3qG8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Payment Summary\",\"col\":3}},{\"id\":\"3whTEpszMm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Person-wise Transaction Summary\",\"col\":3}},{\"id\":\"dyMJVK9M_i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Sales History\",\"col\":3}},{\"id\":\"_FLLZ_Tm1T\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Sales Register\",\"col\":3}},{\"id\":\"KQOFU0bdyf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"EJCgbNsrYe\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">GL REPORT<b></b></span>\",\"col\":12}},{\"id\":\"Lu7yIUXDCx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"v4cDghgEe3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"General Ledger\",\"col\":3}},{\"id\":\"DtsbHbXjSy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trial Balance\",\"col\":3}},{\"id\":\"Ov6bCojr07\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backups\",\"col\":3}},{\"id\":\"ydIomjOFkY\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rhR6d5jifV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>PURCHASE REPORT</b></span>\",\"col\":12}},{\"id\":\"nPaSodMBpO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PhNMQV6T6e\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Register\",\"col\":3}},{\"id\":\"ZvfPKV_sIm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Purchase\",\"col\":3}},{\"id\":\"2ZfVPxc0t3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Analytics\",\"col\":3}},{\"id\":\"JdmttPEMjK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order Analysis\",\"col\":3}}]",
+ "content": "[{\"id\":\"5pTkDqzKQu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">AlFassam Shortcut</span>\",\"col\":12}},{\"id\":\"1ZOopAdP03\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock\",\"col\":4}},{\"id\":\"zXxmFRNsf7\",\"type\":\"card\",\"data\":{\"card_name\":\"Entry Screen\",\"col\":4}},{\"id\":\"Q03RYCbtL1\",\"type\":\"card\",\"data\":{\"card_name\":\"Purchase\",\"col\":4}},{\"id\":\"dH0RGjWRUf\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales\",\"col\":4}},{\"id\":\"SP7hpUrHwy\",\"type\":\"card\",\"data\":{\"card_name\":\"Party\",\"col\":4}},{\"id\":\"x48erVOMDr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"6utnDIjOCL\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">STOCK<b></b></span>\",\"col\":12}},{\"id\":\"H_BOHSyFtr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"mDSH6V9dG5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Chart of Accounts\",\"col\":3}},{\"id\":\"M0TwNbteTs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Enquiry\",\"col\":3}},{\"id\":\"Z-qbGhklw4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Enquiry Summary\",\"col\":3}},{\"id\":\"Xl5ZafJbxS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Balance\",\"col\":3}},{\"id\":\"hSdcOtZS5-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ageing\",\"col\":3}},{\"id\":\"-6gq9c522b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ledger Alfassam\",\"col\":3}},{\"id\":\"d-uCAkIn3h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fpWEK3gnhE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">SALES REPORT<b></b></span>\",\"col\":12}},{\"id\":\"Z1Vc2zlPpr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Qy_3uOAwLj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Analytics\",\"col\":3}},{\"id\":\"ZVjcm2mNFF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Summary\",\"col\":3}},{\"id\":\"Img-eYlMpZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Profit Summary\",\"col\":3}},{\"id\":\"4TeJlftJJl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SALES.REGISTER.SAJEEV\",\"col\":3}},{\"id\":\"oT0D9r3qG8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Payment Summary\",\"col\":3}},{\"id\":\"3whTEpszMm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Person-wise Transaction Summary\",\"col\":3}},{\"id\":\"dyMJVK9M_i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Sales History\",\"col\":3}},{\"id\":\"_FLLZ_Tm1T\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Sales Register\",\"col\":3}},{\"id\":\"KQOFU0bdyf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"EJCgbNsrYe\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">GL REPORT<b></b></span>\",\"col\":12}},{\"id\":\"Lu7yIUXDCx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"v4cDghgEe3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"General Ledger\",\"col\":3}},{\"id\":\"DtsbHbXjSy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trial Balance\",\"col\":3}},{\"id\":\"Ov6bCojr07\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backups\",\"col\":3}},{\"id\":\"ydIomjOFkY\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rhR6d5jifV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>PURCHASE REPORT</b></span>\",\"col\":12}},{\"id\":\"nPaSodMBpO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PhNMQV6T6e\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Register\",\"col\":3}},{\"id\":\"ZvfPKV_sIm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item-wise Purchase\",\"col\":3}},{\"id\":\"2ZfVPxc0t3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Analytics\",\"col\":3}},{\"id\":\"JdmttPEMjK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order Analysis\",\"col\":3}},{\"id\":\"r88fXOzKk4\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"IivPHkLGMz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Profit and Loss Statement\",\"col\":3}},{\"id\":\"JS1lXVCF1-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Balance Sheet\",\"col\":3}}]",
  "creation": "2023-05-17 09:27:15.013007",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -222,7 +222,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-08-20 11:56:37.311002",
+ "modified": "2023-09-11 09:35:18.627576",
  "modified_by": "Administrator",
  "module": "Alfassam",
  "name": "AlFassam",
@@ -264,6 +264,13 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Profit and Loss Statement",
+   "link_to": "Profit and Loss Statement",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Stock Enquiry Summary",
    "link_to": "Stock Enquiry Summary",
    "type": "Report"
@@ -278,8 +285,22 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Stock Ledger Alfassam",
+   "link_to": "Stock LEDGER.Fassam",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Sales Analytics",
    "link_to": "Sales Analytics",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Balance Sheet",
+   "link_to": "Balance Sheet",
    "type": "Report"
   },
   {

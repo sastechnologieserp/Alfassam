@@ -1,4 +1,5 @@
 from . import __version__ as app_version
+from alfassam.period_closing_voucher_custom import PeriodClosingVoucher
 
 app_name = "alfassam"
 app_title = "Alfassam"

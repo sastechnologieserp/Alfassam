@@ -10,30 +10,16 @@ from frappe import _
 from frappe.utils import cint, date_diff, flt
 
 from erpnext.stock.doctype.serial_no.serial_no import get_serial_nos
-from erpnext.stock.get_item_details import get_valuation_rate
 
 Filters = frappe._dict
 
 
 def execute(filters: Filters = None) -> Tuple:
 	to_date = filters["to_date"]
-	show_warehouse_wise_stock = filters.get("show_warehouse_wise_stock") or None
 	columns = get_columns(filters)
 
 	item_details = FIFOSlots(filters).generate()
 	data = format_report_data(filters, item_details, to_date)
-	if show_warehouse_wise_stock:
-		for item in data:
-			sql_query = """
-			SELECT valuation_rate
-			FROM `tabStock Ledger Entry`
-			WHERE item_code = %s AND warehouse = %s
-			ORDER BY posting_date DESC
-			LIMIT 1
-			"""
-			valuation_rate = frappe.db.sql(sql_query, (item[0], item[5]))
-			item_valuation_rate = valuation_rate[0][0] if valuation_rate else None
-			item[4] = item_valuation_rate
 
 	# chart_data = get_chart_data(data, filters)
 
@@ -457,8 +443,7 @@ class FIFOSlots:
 		if self.filters.get("warehouse"):
 			sle_query = self.__get_warehouse_conditions(sle, sle_query)
 
-# I have add "* -1" in sle.posting_date * -1, sle.posting_time * -1, sle.creation * -1
-		sle_query = sle_query.orderby(sle.posting_date, sle.posting_time, sle.creation, sle.actual_qty)
+		sle_query = sle_query.orderby(sle.posting_date * -1, sle.posting_time * -1, sle.creation * -1, sle.actual_qty)
 
 		return sle_query.run(as_dict=True)
 
