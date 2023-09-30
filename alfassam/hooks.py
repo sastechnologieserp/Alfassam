@@ -123,7 +123,16 @@ fixtures = [
 		"filters": {
 			"name": ("in", (
 				"Journal Entry-cost_center",
-                "Item-supplier"
+                "Item-supplier",
+                "Journal Entry-division",
+                "Period Closing Voucher-cost_center",
+                "Purchase Order Item-part_no",
+                "Item-part_no",
+                "Purchase Invoice-container_reference",
+                "Purchase Invoice-finished_items",
+                "Purchase Invoice-finished_goods",
+                "Purchase Order-remarks",
+                "Quotation-remarks"
             ))
         }
     },
