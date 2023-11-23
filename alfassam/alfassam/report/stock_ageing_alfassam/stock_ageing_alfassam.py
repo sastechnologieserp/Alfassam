@@ -34,6 +34,11 @@ def execute(filters: Filters = None) -> Tuple:
 			valuation_rate = frappe.db.sql(sql_query, (item[0], item[5]))
 			item_valuation_rate = valuation_rate[0][0] if valuation_rate else None
 			item[4] = item_valuation_rate
+			item[16] = item_valuation_rate * item[7]
+			item[17] = item_valuation_rate * item[8]
+			item[18] = item_valuation_rate * item[9]
+			item[19] = item_valuation_rate * item[10]
+			item[20] = item_valuation_rate * item[11]
 
 	# chart_data = get_chart_data(data, filters)
 
