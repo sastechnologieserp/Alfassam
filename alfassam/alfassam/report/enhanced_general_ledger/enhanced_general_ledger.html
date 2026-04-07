@@ -1,4 +1,9 @@
-
+<style>
+    .wrap-text {
+        word-break: break-word;
+        white-space: normal;
+    }
+    </style>
 <h2 class="text-center">{%= __("Statement of Account") %}</h2>
 <h4 class="text-center">
 	{% if (filters.party_name) { %}
@@ -41,7 +46,7 @@
 				<td>{%= frappe.datetime.str_to_user(data[i].posting_date) %}</td>
 				<td>{%= data[i].voucher_type %}
 					<br>{%= data[i].voucher_no %}</td>
-				<td>
+				<td class="wrap-text" style="max-width: 300px;">
 					{% if(!(filters.party || filters.account)) { %}
 						{%= data[i].party || data[i].account %}
 						<br>
