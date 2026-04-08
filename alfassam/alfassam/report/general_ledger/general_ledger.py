@@ -303,37 +303,45 @@ def get_data_with_opening_closing(filters, account_details, accounting_dimension
 
 	totals, entries = get_accountwise_gle(filters, accounting_dimensions, gl_entries, gle_map)
 
-	# Opening for filtered account
-	data.append(totals.opening)
-
+	# If not grouped by voucher (consolidated), loop through the accounts
 	if filters.get("group_by") != "Group by Voucher (Consolidated)":
 		for acc, acc_dict in gle_map.items():
-			# acc
+			# Check if the account has entries
 			if acc_dict.entries:
-				# opening
-				data.append({})
+				# Show the opening totals if not grouped by voucher
 				if filters.get("group_by") != "Group by Voucher":
 					data.append(acc_dict.totals.opening)
 
+				# Add all the account entries
 				data += acc_dict.entries
 
-				# totals
+				# Append the totals for this account
 				data.append(acc_dict.totals.total)
 
-				# closing
+				# Show the closing totals if not grouped by voucher
 				if filters.get("group_by") != "Group by Voucher":
 					data.append(acc_dict.totals.closing)
-		data.append({})
+
+			# If the account has no entries, still show the opening and closing totals
+			else:
+				# Add the opening total
+				if filters.get("group_by") != "Group by Voucher":
+					data.append(acc_dict.totals.opening)
+				
+				# Add a placeholder for no entries, or keep this blank if preferred
+				data.append({'message': 'No entries for this account'})
+				
+				# Add the closing total
+				if filters.get("group_by") != "Group by Voucher":
+					data.append(acc_dict.totals.closing)
+
 	else:
+		# If grouped by voucher (consolidated), show the entries
 		data += entries
 
-	# totals
-	data.append(totals.total)
-
-	# closing
-	data.append(totals.closing)
-
+	# Return the final data
 	return data
+
 
 
 def get_totals_dict():

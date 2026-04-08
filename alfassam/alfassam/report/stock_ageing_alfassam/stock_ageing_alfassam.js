@@ -83,7 +83,7 @@ frappe.query_reports["Stock Ageing Alfassam"] = {
 			"fieldname":"show_warehouse_wise_stock",
 			"label": __("Show Warehouse-wise Stock"),
 			"fieldtype": "Check",
-			"default": 0
+			"default": 1
 		}
 	]
 }

@@ -1,3 +1,26 @@
+<style>
+	.print-format td, .print-format th {
+    padding: 6px !important; 
+	}
+	th {
+  color:black!important;
+  font-size: 3.1mm;
+  padding: 0.1in!important;
+	margin-top: 0mm;
+	margin-left: 0mm;
+ }
+ td {
+  padding: 5.3mm !important;
+  color:black !important;
+  font-size: 2.9mm;
+ }
+ table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 !important;
+  border: 1px solid black;
+}	
+</style>
 <h2 class="text-center">{%= __("Statement of Account") %}</h2>
 <h4 class="text-center">
 	{% if (filters.party_name) { %}
@@ -60,7 +83,15 @@
 				</td>
 			</tr>
 			{% } %}
-			{% if (frappe.format(data[i].account, {fieldtype: "Link"}) === "Opening" && i != 0) { %}
+			{% if (frappe.format(data[i].account, {fieldtype: "Link"}) === "Opening" ) { %}
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
 			<tr>
 				<td></td>
 				<td></td>
