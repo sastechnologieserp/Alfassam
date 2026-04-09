@@ -27,8 +27,8 @@ def execute(filters: Filters = None) -> Tuple:
 			sql_query = """
 			SELECT valuation_rate
 			FROM `tabStock Ledger Entry`
-			WHERE item_code = %s AND warehouse = %s
-			ORDER BY posting_date DESC
+			WHERE item_code = %s AND warehouse = %s AND is_cancelled = 0
+			ORDER BY posting_date DESC, posting_time DESC, creation DESC
 			LIMIT 1
 			"""
 			valuation_rate = frappe.db.sql(sql_query, (item[0], item[5]))
